@@ -1,0 +1,5 @@
+.video-image{
+	object-fit: cover;
+	width: auto;
+	height: 100% !important;
+}
