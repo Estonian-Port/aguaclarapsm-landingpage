@@ -1,8 +1,13 @@
 body{
 	overflow-x: hidden;
-	width: auto;
 }
 
+@media (max-width: 400px){
+	body{
+		width: 30em;
+	}
+
+}
 
 .video-image{
 	object-fit: cover;
