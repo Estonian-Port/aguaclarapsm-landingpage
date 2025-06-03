@@ -248,7 +248,6 @@ h6 {
 }
 
 @media (max-width: 575px) {
-  .shift-left-lg{margin-left:-7rem;}
   .header .topbar .contact-info i a,
   .header .topbar .contact-info i span {
     font-size: 13px;
@@ -1590,14 +1589,22 @@ section,
   transform: scale(-1, -1);
 }
 
+/* .testimonials .swiper-slide{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 15px auto 15px auto;
-}
+  text-align: center;
+  margin: 0;
+} */
 
-.testimonials .swiper-wrapper {
+/* .testimonials .swiper-wrapper {
   height: auto;
-}
+} */
 
 .testimonials .swiper-pagination {
   margin-top: 20px;
@@ -1624,10 +1631,31 @@ section,
     overflow: hidden;
   }
 
-  .testimonials .testimonial-item {
+  /* .testimonials .testimonial-item {
     margin: 15px;
-  }
+  } */
 }
+
+
+.testimonials .swiper,
+.testimonials .swiper-wrapper,
+.testimonials .swiper-slide {
+  height: 100%;
+}
+
+.testimonials .swiper-slide {
+  display: grid;  
+  place-items: center;     
+}
+
+.testimonials .testimonial-item{
+  display:flex; 
+  flex-direction:column;  
+  justify-content:center;  
+  align-items:center;    
+  text-align:center;     
+}
+
 
 /*--------------------------------------------------------------
 # Gallery Section
