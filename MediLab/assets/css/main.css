@@ -640,11 +640,8 @@ h6 {
 }
 
 .footer .social-links a {
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
+  padding: 10px;
   border-radius: 50%;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 16px;
@@ -1012,6 +1009,15 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
+@media (max-width: 567px) {
+  .hero .content p {
+    font-size: 18px;
+    height:auto !important;
+    min-height: 0;
+    overflow: visible;
+  }
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -1045,6 +1051,21 @@ section,
 
 .about .content ul p {
   font-size: 15px;
+}
+
+@media (max-width: 576px) {
+  .about .flex-column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about .flex-column .btn {
+    display: flex;
+    align-self: center;
+  }
 }
 
 .about .content p:last-child {
@@ -1517,6 +1538,15 @@ section,
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+  .testimonials .info h3 {
+    padding-top: 15px;
+    align-self: center;
+    margin-left: 75px;
+  }
+}
+
 .testimonials .info h3 {
   font-weight: 700;
   font-size: 32px;
