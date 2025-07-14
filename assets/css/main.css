@@ -87,6 +87,7 @@ h6 {
   font-family: var(--heading-font);
 }
 
+
 /* Pulsating Play Button
 ------------------------------*/
 .pulsating-play-btn {
@@ -285,8 +286,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  max-height: 100px;
+  margin-right: 12px;
 }
 
 .header .logo h1 {
@@ -783,6 +784,28 @@ h6 {
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
+}
+
+.scroll-wsp{
+  position:fixed;
+  right:1rem;
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  color:#fff;
+  z-index:999;
+}
+
+/* Scroll-top: abajo */
+.scroll-top{
+  bottom:1rem;
+  background:#0d6efd; /* primary */
+}
+
+/* WhatsApp: encima */
+.scroll-wsp{
+  bottom:4.5rem;
+  background:#25d366; /* verde WhatsApp */
 }
 
 /*--------------------------------------------------------------
